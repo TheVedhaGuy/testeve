@@ -76,22 +76,6 @@ people = {
             # 'lastname' is an API entry-point, so we need it to be unique.
             'unique': True,
         },
-        # 'role' is a list, and can only contain values from 'allowed'.
-        'role': {
-            'type': 'list',
-            'allowed': ["author", "contributor", "copy"],
-        },
-        # An embedded 'strongly-typed' dictionary.
-        'location': {
-            'type': 'dict',
-            'schema': {
-                'address': {'type': 'string'},
-                'city': {'type': 'string'}
-            },
-        },
-        'born': {
-            'type': 'datetime',
-        },
     }
 }
 
